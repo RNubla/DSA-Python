@@ -1,7 +1,7 @@
 from typing import List
 
 
-def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+def fourSum(nums: List[int], target: int) -> List[List[int]]:
     def kSum(nums: List[int], target: int, k: int) -> List[List[int]]:
         res = []
 
@@ -35,3 +35,8 @@ def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
 
     nums.sort()
     return kSum(nums, target, 4)
+
+
+if __name__ == '__main__':
+    a = [2, 1, 0, -1]
+    print(fourSum(nums=a, target=2))
